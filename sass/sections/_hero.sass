@@ -1,0 +1,84 @@
+.hero
+  z-index: 100
+  margin-bottom: 134px
+  &-wrapper
+    height: 590px
+    display: flex
+    margin-left: 60px
+    background-color: #334057
+    border-radius: 20px
+    margin-bottom: 50px
+  &__info
+    padding-top: 30px
+    padding-left: 40px
+    padding-right: 35px
+    align-self: flex-start
+  &__title
+    margin: 0
+    font-style: normal
+    font-weight: 600
+    font-size: 30px
+    line-height: 37px
+    margin-bottom: 10px
+  &__text
+    margin: 0
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    max-width: 240px
+    margin-bottom: 8px
+  &__date
+    display: block
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    margin-bottom: 48px
+
+  &__button
+    padding: 13px 94px
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 21px
+    color: #000
+    background: transparent
+    background-color: $primary
+    outline: none
+    border-radius: 10px
+    cursor: pointer
+
+.slider
+  position: relative
+  min-width: 0
+  width: 100%
+  &__item
+    width: 100%
+.slick-track
+  display: flex
+.slick-list
+  overflow: hidden
+.slick-arrow
+  position: absolute
+  top: 50%
+  z-index: 10
+
+.slider .slick-arrow
+  position: absolute
+  top: 50%
+  z-index: 10
+  text-indent: -9999px
+  border: none
+  outline: none
+  width: 16.5px
+  height: 27px
+  transform: translateY(-50%)
+
+  &.slick-prev
+    left: 37px
+    background: url('../img/prev.svg') 0 0 / 100% no-repeat
+
+  &.slick-next
+    right: 40px
+    background: url('../img/next.svg') 0 0 / 100% no-repeat

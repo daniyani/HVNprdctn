@@ -344,6 +344,12 @@ template {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Gilam Black DEMO', sans-serif;
+  color: #ffffff;
+}
+
+body {
+  background: linear-gradient(158.73deg, #021A36 0%, #021A36 0.01%, #24002E 100%);
 }
 
 img {
@@ -353,5 +359,216 @@ img {
 .container {
   max-width: 1706px;
   margin: auto;
+}
+
+.header {
+  padding-top: 76px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-bottom: 94px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu__item {
+  margin-right: 78px;
+  font-family: Gilam;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.hero {
+  z-index: 100;
+  margin-bottom: 134px;
+}
+
+.hero-wrapper {
+  height: 590px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 60px;
+  background-color: #334057;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.hero__info {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 35px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.hero__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  max-width: 240px;
+  margin-bottom: 8px;
+}
+
+.hero__date {
+  display: block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 48px;
+}
+
+.hero__button {
+  padding: 13px 94px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  background: transparent;
+  background-color: #ffffff;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slider {
+  position: relative;
+  min-width: 0;
+  width: 100%;
+}
+
+.slider__item {
+  width: 100%;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  text-indent: -9999px;
+  border: none;
+  outline: none;
+  width: 16.5px;
+  height: 27px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 37px;
+  background: url("../img/prev.svg") 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 40px;
+  background: url("../img/next.svg") 0 0/100% no-repeat;
+}
+
+.footer {
+  padding-right: 114px;
+  padding-bottom: 104px;
+}
+
+.footer-wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 40px;
+}
+
+.footer__be {
+  margin-bottom: 16px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__item {
+  font-family: Gilam;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
 /*# sourceMappingURL=style.css.map */
