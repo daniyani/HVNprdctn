@@ -712,12 +712,6 @@ img {
   .hero {
     margin-bottom: 60px;
   }
-  .hero-scroll {
-    height: 3000px;
-    overflow: hidden;
-    overflow-y: scroll;
-    width: 100%;
-  }
   .slider__item {
     width: 795px;
   }
@@ -829,6 +823,13 @@ img {
     border: none;
     outline: none;
   }
+  .scroll {
+    height: 550px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border-radius: 20px;
+  }
 }
 
 @media (max-width: 541px) {
@@ -854,8 +855,6 @@ img {
     line-height: 150%;
   }
   .hero {
-    width: 95%;
-    margin: auto;
     margin-bottom: 40px;
   }
   .hero-wrapper {
@@ -923,6 +922,11 @@ img {
     font-weight: normal;
     font-size: 14.3036px;
     line-height: 18px;
+  }
+  .scroll {
+    height: 571px;
+    width: 95%;
+    margin: auto;
   }
 }
 
