@@ -712,6 +712,12 @@ img {
   .hero {
     margin-bottom: 60px;
   }
+  .hero-scroll {
+    height: 3000px;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+  }
   .slider__item {
     width: 795px;
   }
