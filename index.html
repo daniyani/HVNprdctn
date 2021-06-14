@@ -11,13 +11,17 @@
 </head>
 
 <body>
-
-  <header class="header">
+  <header class="header header--fixed">
     <div class="navbar">
       <a href="index.html" class="navbar__link">
         <img src="img/logo.svg" alt="Logo: HEAVEN PRD CTN" class="logo">
       </a>
       <!-- /.navbar__link -->
+      <a class="burger header__burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </a>
       <div class="menu navbar__menu">
 
         <a href="#" class="menu__link">
@@ -32,8 +36,6 @@
       <!-- /.menu navbar__menu -->
     </div>
     <!-- /.navbar -->
-
-    <!-- /.container -->
   </header>
   <!-- /.header -->
   <section class="hero">
@@ -48,8 +50,8 @@
             consequat.</p>
           <span class="hero__date">18.01.2021</span>
         </div>
-        <a data-fancybox href="https://vimeo.com/559029274">
-          <button class="hero__button button-play">Watch</button>
+        <a class="hero__link" data-fancybox href="https://vimeo.com/559029274">
+          Watch
         </a>
 
       </div>
@@ -77,8 +79,8 @@
             consequat.</p>
           <span class="hero__date">18.01.2021</span>
         </div>
-        <a data-fancybox href="https://vimeo.com/559029274">
-          <button class="hero__button button-play">Watch</button>
+        <a class="hero__link" data-fancybox href="https://vimeo.com/559029274">
+          Watch
         </a>
 
       </div>
@@ -96,7 +98,7 @@
       <!-- /.slider hero__slider -->
     </div>
     <!-- /.hero-wrapper -->
-    <div class="hero-wrapper">
+    <div class="hero-wrapper hero-wrapper--hidden">
       <div class="hero__info">
         <div class="hero__label">
           <h2 class="hero__title">Project name</h2>
@@ -107,8 +109,8 @@
             consequat.</p>
           <span class="hero__date">18.01.2021</span>
         </div>
-        <a data-fancybox href="https://vimeo.com/559029274">
-          <button class="hero__button button-play">Watch</button>
+        <a class="hero__link" data-fancybox href="https://vimeo.com/559029274">
+          Watch
         </a>
 
       </div>
@@ -126,7 +128,7 @@
       <!-- /.slider hero__slider -->
     </div>
     <!-- /.hero-wrapper -->
-    <div class="hero-wrapper">
+    <div class="hero-wrapper hero-wrapper--hidden">
       <div class="hero__info">
         <div class="hero__label">
           <h2 class="hero__title">Project name</h2>
@@ -137,8 +139,8 @@
             consequat.</p>
           <span class="hero__date">18.01.2021</span>
         </div>
-        <a data-fancybox href="https://vimeo.com/559029274">
-          <button class="hero__button button-play">Watch</button>
+        <a class="hero__link" data-fancybox href="https://vimeo.com/559029274">
+          Watch
         </a>
 
       </div>
@@ -178,7 +180,31 @@
     </div>
   </footer>
   <!-- /.footer -->
+  <div class="drop-menu">
+    <div class="drop-menu__navbar">
+      <a href="#" class="drop-menu__logo">
+        <img src="img/drop-menu-logo.svg" alt="" class="drop-menu__img">
+      </a>
+      <a href="#" class="drop-menu__close">
+        <img src="img/close.svg" alt="" class="close">
+      </a>
+    </div>
+    <ul class="drop-menu__list">
 
+      <a href="#" class="drop-menu__link">
+        <div class="drop-menu__line"></div>
+        <li class="drop-menu__item">Home</li>
+      </a>
+      <a href="#" class="drop-menu__link">
+        <div class="drop-menu__line"></div>
+        <li class="drop-menu__item">Vacancies</li>
+      </a>
+      <a href="#" class="drop-menu__link">
+        <div class="drop-menu__line"></div>
+        <li class="drop-menu__item">About</li>
+      </a>
+    </ul>
+  </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>

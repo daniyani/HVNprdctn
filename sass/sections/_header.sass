@@ -2,26 +2,31 @@
   padding-top: 76px
   padding-left: 100px
   padding-right: 100px
-  margin-bottom: 94px
+  padding-bottom: 94px
+
 .navbar
   display: flex
   align-items: center
   justify-content: space-between
+  &__link
+    flex-shrink: 0
+    width: 324px
+
 .menu
-  &__list
-    margin: 0
-    padding: 0
-    display: flex
-    align-items: center
-    justify-content: space-between
-    list-style: none
+  display: flex
+  align-items: center
+  justify-content: space-between
   &__link
     text-decoration: none
     color: $primary
-  &__item
-    margin-right: 78px
-    font-family: Gilam
     font-style: normal
     font-weight: normal
     font-size: 24px
     line-height: 150%
+    margin-right: 76px
+    &:last-child
+      margin-right: 0
+.burder
+  display: none
+.drop-menu
+  display: none
