@@ -100,8 +100,7 @@
       height: 2px
       background-color: $primary
   .drop-menu
-    position: relative
-    display: none
+    display: block
     background-color: $primary
     border-radius: 0px 0px 20px 20px
     position: fixed
@@ -110,8 +109,10 @@
     z-index: 101
     top: 0
     left: 0
+    transition: 0.5s
+    transform: translateY(-100%)
     &--visible
-      display: block
+      transform: translateY(0)
 
     &__navbar
       display: flex

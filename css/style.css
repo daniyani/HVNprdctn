@@ -349,41 +349,11 @@ template {
 
 body {
   background: linear-gradient(158.73deg, #021A36 0%, #021A36 0.01%, #24002E 100%);
-  font-family: 'Gilam Demo Black';
+  font-family: 'Montserrat', sans-serif, 'Helvetica';
 }
 
 img {
   max-width: 100%;
-}
-
-@font-face {
-  font-family: 'Gilam';
-  src: url("..fonts/Gilam-Light.woff2") format("woff2");
-  src: url("..fonts/Gilam-Light.woff") format("woff");
-  src: url("..fonts/Gilam-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilam';
-  src: url("..fonts/Gilam-Regular.woff2") format("woff2");
-  src: url("..fonts/Gilam-Regular.woff") format("woff");
-  src: url("..fonts/Gilam-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilam';
-  src: url("..fonts/Gilam-SemiBold.woff2") format("woff2");
-  src: url("..fonts/Gilam-SemiBold.woff") format("woff");
-  src: url("..fonts/Gilam-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
 }
 
 .header {
@@ -512,6 +482,11 @@ img {
   border-radius: 10px;
   cursor: pointer;
   text-decoration: none;
+  opacity: 0.5;
+}
+
+.hero__link--active {
+  opacity: 1;
 }
 
 .slider {
@@ -611,7 +586,6 @@ img {
 }
 
 .footer__item {
-  font-family: Gilam;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -759,8 +733,7 @@ img {
     background-color: #ffffff;
   }
   .drop-menu {
-    position: relative;
-    display: none;
+    display: block;
     background-color: #ffffff;
     border-radius: 0px 0px 20px 20px;
     position: fixed;
@@ -769,9 +742,14 @@ img {
     z-index: 101;
     top: 0;
     left: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   .drop-menu--visible {
-    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .drop-menu__navbar {
     display: -webkit-box;

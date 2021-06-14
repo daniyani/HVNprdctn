@@ -28,3 +28,7 @@ var menuClose = $(".drop-menu");
 menuClose.removeClass ("drop-menu--visible")
 });
 
+$('.hero__link').hover(
+       function(){ $(this).addClass('hero__link--active') },
+       function(){ $(this).removeClass('hero__link--active') }
+);
