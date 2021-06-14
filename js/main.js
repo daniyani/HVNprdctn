@@ -6,7 +6,8 @@ $('.slider').slick({
   variableWidth: true,
   speed: 500,
   easing: 'ease',
- 
+
+
 
 });
 });
