@@ -19,7 +19,7 @@
         <img src="img/logo.svg" alt="Logo: HEAVEN PRD CTN" class="logo">
       </a>
       <!-- /.navbar__link -->
-      <a class="burger header__burger">
+      <a href="#" class="burger header__burger" data-modal-btn="my_modal">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -184,31 +184,36 @@
     </div>
   </footer>
   <!-- /.footer -->
-  <div class="drop-menu">
-    <div class="drop-menu__navbar">
-      <a href="#" class="drop-menu__logo">
-        <img src="img/drop-menu-logo.svg" alt="" class="drop-menu__img">
-      </a>
-      <a href="#" class="drop-menu__close">
-        <img src="img/close.svg" alt="" class="close">
-      </a>
-    </div>
-    <ul class="drop-menu__list">
+  <div class="modal">
+    <div class="overlay overlay" data-modal-overlay="my_modal">
+      <div class="drop-menu" data-modal-menu="my_modal">
+        <div class="drop-menu__navbar">
+          <a href="#" class="drop-menu__logo">
+            <img src="img/drop-menu-logo.svg" alt="" class="drop-menu__img">
+          </a>
+          <a href="#" class="drop-menu__close">
+            <img src="img/close.svg" alt="" class="close">
+          </a>
+        </div>
+        <ul class="drop-menu__list">
 
-      <a href="#" class="drop-menu__link">
-        <div class="drop-menu__line"></div>
-        <li class="drop-menu__item">Home</li>
-      </a>
-      <a href="#" class="drop-menu__link">
-        <div class="drop-menu__line"></div>
-        <li class="drop-menu__item">Vacancies</li>
-      </a>
-      <a href="#" class="drop-menu__link">
-        <div class="drop-menu__line"></div>
-        <li class="drop-menu__item">About</li>
-      </a>
-    </ul>
+          <a href="#" class="drop-menu__link">
+            <span class="drop-menu__line"></span>
+            <li class="drop-menu__item">Home</li>
+          </a>
+          <a href="#" class="drop-menu__link">
+            <span class="drop-menu__line"></span>
+            <li class="drop-menu__item">Vacancies</li>
+          </a>
+          <a href="#" class="drop-menu__link">
+            <span class="drop-menu__line"></span>
+            <li class="drop-menu__item">About</li>
+          </a>
+        </ul>
+      </div>
+    </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
