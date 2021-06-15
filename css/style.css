@@ -776,8 +776,8 @@ img {
     z-index: 100000;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 1s opacity, .55s visibility;
-    transition: 1s opacity, .55s visibility;
+    -webkit-transition: .55s opacity, .55s visibility;
+    transition: .55s opacity, .55s visibility;
     width: 100vw;
     height: 100vh;
   }
