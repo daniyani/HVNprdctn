@@ -29,6 +29,7 @@ modalOverlay.addClass("overlay--visible");
 modalMenu.addClass("drop-menu--visible");
 logoOpacity.addClass ("opacity-logo--visible")
 closeOpacity.addClass ("opacity-close--visible")
+
 }
 function closeModal (event) {
 event.preventDefault();

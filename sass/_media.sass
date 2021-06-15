@@ -28,7 +28,8 @@
       min-height: 711px
       position: relative
       flex-direction: column
-      border-radius: 0
+      border-radius: 20px
+      overflow: hidden
       &:last-child
         margin-bottom: 0
 
@@ -73,8 +74,9 @@
     padding-bottom: 60px
   .header
     padding-top: 50px
-    padding-bottom: 50px
-    background-color: rgba(5, 0, 34, 0.9)
+    padding-bottom: 40px
+    background-color: rgba(7, 0, 48, 0.9)
+
     overflow: hidden
     &--fixed
       position: fixed
@@ -95,6 +97,7 @@
       font-size: 20px
       margin-right: 50px
   .hero
+    margin-top: 34px
     &-wrapper
     &__link
       color: #000
@@ -137,7 +140,6 @@
     &--visible
       opacity: 1
       visibility: visible
-      transition: .55s opacity, .55s visibility
   .drop-menu
     display: block
     background-color: $primary
@@ -221,7 +223,7 @@
     padding-bottom: 40px
   .header
     padding-top: 40px
-    padding-bottom: 30px
+    padding-bottom: 25px
 
   .navbar
     &__link
@@ -234,7 +236,8 @@
       line-height: 150%
   .hero
     width: 96%
-    margin: auto
+    margin: 0 auto
+    margin-top: 34px
     &-wrapper
       min-height: 0
       border-radius: 20px
@@ -272,6 +275,7 @@
     width: 10px
     height: 100%
   .footer
+    padding-top: 15px
     padding-bottom: 20px
     padding-right: 0
     padding-left: 25px
