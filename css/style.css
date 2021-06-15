@@ -480,8 +480,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #fff;
-  background: transparent;
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
   outline: none;
   border: none;
   border-radius: 10px;
@@ -491,6 +490,7 @@ img {
 
 .hero__link--active {
   color: #000;
+  background: #fff;
 }
 
 .slider {
@@ -765,6 +765,8 @@ img {
     z-index: 100000;
     visibility: hidden;
     opacity: 0;
+    width: 100vw;
+    height: 100vh;
   }
   .overlay--visible {
     visibility: visible;
@@ -880,9 +882,6 @@ img {
     border-radius: 20px;
     overflow: hidden;
     margin-bottom: 30px;
-  }
-  .hero-wrapper--hidden {
-    display: none;
   }
   .hero__info {
     padding-top: 10px;
