@@ -23,8 +23,12 @@ function openModal (event) {
   event.preventDefault();
 var modalOverlay = $(".overlay");
 var modalMenu = $(".drop-menu");
+var logoOpacity = $(".opacity-logo")
+var closeOpacity = $(".opacity-close")
 modalOverlay.addClass("overlay--visible");
 modalMenu.addClass("drop-menu--visible");
+logoOpacity.addClass ("opacity-logo--visible")
+closeOpacity.addClass ("opacity-close--visible")
 }
 function closeModal (event) {
 event.preventDefault();
@@ -44,12 +48,12 @@ modalDialog.removeClass ("drop-menu--visible")
 }
 });
 
+$(document).click(function(event){if(!$(event.target).closest(".drop-menu, [data-toggle=modal]").length){$("body").find(".overlay").removeClass("overlay--visible");$('body').removeClass("overflow")}});
 
 
 
 
-
-$('.hero__link').hover(
-       function(){ $(this).addClass('hero__link--active') },
-       function(){ $(this).removeClass('hero__link--active') }
-);
+// $('.hero__link').hover(
+//        function(){ $(this).addClass('hero__link--active') },
+//        function(){ $(this).removeClass('hero__link--active') }
+// );

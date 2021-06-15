@@ -19,11 +19,13 @@
         <img src="img/logo.svg" alt="Logo: HEAVEN PRD CTN" class="logo">
       </a>
       <!-- /.navbar__link -->
-      <a href="#" class="burger header__burger" data-modal-btn="my_modal">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-      </a>
+      <div class="burger-wrapper">
+        <a href="#" class="burger header__burger" data-toggle="modal">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </a>
+      </div>
       <div class="menu navbar__menu">
 
         <a href="#" class="menu__link">
@@ -168,11 +170,15 @@
   <footer class="footer">
     <div class="footer-wrapper">
       <div class="footer__social">
-        <a href="#">
-          <img src="img/be.svg" alt="Be" class="be footer__be">
+        <a target="_blank" href="https://vimeo.com/hvn">
+          <img src="img/vimeo.svg" alt="Be" class="vimeo footer__link">
         </a>
-        <a href="#">
-          <img src="img/instagram.svg" alt="instagram" class="instagram footer__instagram">
+        <a target="_blank"
+          href="https://www.behance.net/heavenproduct?tracking_source=search_users_recommended%7Cheaven%20production%20">
+          <img src="img/be.svg" alt="Be" class="be footer__link">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/hvn.prod/">
+          <img src="img/instagram.svg" alt="instagram" class="instagram footer__link">
         </a>
       </div>
       <ul class="footer__list">
@@ -186,11 +192,11 @@
   <!-- /.footer -->
 
   <div class="overlay" data-modal-overlay="my_modal">
+    <a href="#" class="opacity-logo">
+      <img src="img/drop-menu-logo.svg" alt="" class="opacity-logo__img">
+    </a>
     <div class="drop-menu" data-modal-menu="my_modal">
       <div class="drop-menu__navbar">
-        <a href="#" class="drop-menu__logo">
-          <img src="img/drop-menu-logo.svg" alt="" class="drop-menu__img">
-        </a>
         <a href="#" class="drop-menu__close">
           <img src="img/close.svg" alt="" class="close">
         </a>
