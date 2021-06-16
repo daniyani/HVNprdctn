@@ -971,17 +971,15 @@ img {
     line-height: 150%;
   }
   .hero {
+    border-radius: 20px;
     width: 96%;
     margin: 0 auto;
     margin-top: 34px;
-    border-radius: 20px;
-    overflow: hidden;
   }
   .hero-wrapper {
+    border-radius: 20px;
     min-height: 0;
     margin-bottom: 30px;
-    border-radius: 20px;
-    overflow: hidden;
   }
   .hero__info {
     padding-top: 10px;
