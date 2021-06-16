@@ -550,6 +550,7 @@ img {
 .slider {
   position: relative;
   min-width: 0;
+  overflow: hidden;
 }
 
 .slider__item {
@@ -557,6 +558,7 @@ img {
   max-height: 590px;
   margin-right: 10px;
   outline: none;
+  border: none;
 }
 
 .slider__item:hover {
