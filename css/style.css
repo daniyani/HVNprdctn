@@ -971,8 +971,6 @@ img {
     line-height: 150%;
   }
   .hero {
-    border-radius: 20px;
-    overflow: hidden;
     width: 96%;
     margin: 0 auto;
     margin-top: 34px;
@@ -1004,10 +1002,6 @@ img {
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 18px;
-  }
-  .slider {
-    border-radius: 20px;
-    overflow: hidden;
   }
   .slider__item {
     width: 480px;
