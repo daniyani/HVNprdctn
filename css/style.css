@@ -1007,10 +1007,12 @@ img {
   .slider__item {
     width: 480px;
     border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
   }
   .slider__img {
     height: auto;
     border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
   }
   .slider .slick-arrow.slick-prev {
     left: 20px;
