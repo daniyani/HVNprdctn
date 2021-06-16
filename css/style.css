@@ -565,6 +565,8 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .slick-track {
