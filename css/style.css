@@ -466,7 +466,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -976,8 +979,10 @@ img {
     margin-top: 34px;
   }
   .hero-wrapper {
-    border-radius: 20px;
-    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     min-height: 0;
     margin-bottom: 30px;
   }
