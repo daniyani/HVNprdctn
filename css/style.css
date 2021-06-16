@@ -980,6 +980,8 @@ img {
   .hero-wrapper {
     min-height: 0;
     margin-bottom: 30px;
+    border-radius: 20px;
+    overflow: hidden;
   }
   .hero__info {
     padding-top: 10px;
