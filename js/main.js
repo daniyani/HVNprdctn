@@ -49,12 +49,16 @@ modalDialog.removeClass ("drop-menu--visible")
 }
 });
 
-$(document).click(function(event){if(!$(event.target).closest(".drop-menu, [data-toggle=modal]").length){$("body").find(".overlay").removeClass("overlay--visible");$('body').removeClass("overflow")}});
+$(document).click(function(event)
+{if(!$(event.target).closest(".drop-menu, [data-toggle=modal]").length)
+{$("body").find(".overlay").removeClass("overlay--visible");$('body').removeClass("overflow")}});
+
+$(document).click(function(event)
+{if(!$(event.target).closest(".drop-menu, [data-toggle=modal]").length)
+{$("body").find(".drop-menu").removeClass("drop-menu--visible");$('body').removeClass("overflow")}});
 
 
-
-
-// $('.hero__link').hover(
-//        function(){ $(this).addClass('hero__link--active') },
-//        function(){ $(this).removeClass('hero__link--active') }
-// );
+$('.hero__link').hover(
+       function(){ $(this).addClass('hero__link--active') },
+       function(){ $(this).removeClass('hero__link--active') }
+);

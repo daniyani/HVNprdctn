@@ -200,9 +200,9 @@
     outline: none
   .opacity-logo
     position: absolute
-    top: 40px
+    top: 50px
     left: 30px
-    transition: transform 0.3s
+    transition: transform 1500ms
     opacity: 0
     visibility: hidden
     transition: .55s opacity, .55s visibility
@@ -210,6 +210,8 @@
       visibility: visible
       opacity: 1
       z-index: 100005
+    &__img
+      width: 220px
 @media (max-width: 541px)
   .slider
     &__item
@@ -292,6 +294,11 @@
     &__navbar
       padding-top: 35px
       padding-bottom: 30px
+  .opacity-logo
+    top: 40px
+    left: 30px
+    &__img
+      width: 141px
 @media (max-width: 415px)
   .slider
     &__item

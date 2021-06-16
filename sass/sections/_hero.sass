@@ -7,9 +7,6 @@
     border-radius: 20px
     margin-bottom: 50px
     background-color: hsla(0, 0%, 100%, 0.1)
-    &:hover .hero__link
-      color: #000
-      background: #fff
   &__info
     padding-top: 30px
     padding-left: 40px
@@ -61,11 +58,14 @@
 .slider
   position: relative
   min-width: 0
+
   &__item
     max-width: 955px
     max-height: 590px
     margin-right: 10px
     outline: none
+    &:hover
+      cursor: grab
 
   &__img
     width: 100%

@@ -395,6 +395,7 @@ img {
 }
 
 .menu__link {
+  position: relative;
   text-decoration: none;
   color: #ffffff;
   font-style: normal;
@@ -404,12 +405,28 @@ img {
   margin-right: 76px;
 }
 
-.menu__link:last-child {
-  margin-right: 0;
+.menu__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 8px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
 }
 
-.menu__link:hover {
-  font-weight: 600;
+.menu__link:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .burder {
@@ -437,11 +454,6 @@ img {
   border-radius: 20px;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.hero-wrapper:hover .hero__link {
-  color: #000;
-  background: #fff;
 }
 
 .hero__info {
@@ -518,6 +530,11 @@ img {
   max-height: 590px;
   margin-right: 10px;
   outline: none;
+}
+
+.slider__item:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .slider__img {
@@ -886,12 +903,12 @@ img {
   }
   .opacity-logo {
     position: absolute;
-    top: 40px;
+    top: 50px;
     left: 30px;
-    -webkit-transition: -webkit-transform 0.3s;
-    transition: -webkit-transform 0.3s;
-    transition: transform 0.3s;
-    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition: -webkit-transform 1500ms;
+    transition: -webkit-transform 1500ms;
+    transition: transform 1500ms;
+    transition: transform 1500ms, -webkit-transform 1500ms;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .55s opacity, .55s visibility;
@@ -901,6 +918,9 @@ img {
     visibility: visible;
     opacity: 1;
     z-index: 100005;
+  }
+  .opacity-logo__img {
+    width: 220px;
   }
 }
 
@@ -1002,6 +1022,13 @@ img {
   .drop-menu__navbar {
     padding-top: 35px;
     padding-bottom: 30px;
+  }
+  .opacity-logo {
+    top: 40px;
+    left: 30px;
+  }
+  .opacity-logo__img {
+    width: 141px;
   }
 }
 
