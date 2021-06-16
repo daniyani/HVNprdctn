@@ -904,7 +904,7 @@ img {
   .opacity-logo {
     position: absolute;
     top: 50px;
-    left: 28px;
+    left: 31px;
     -webkit-transition: -webkit-transform 1500ms;
     transition: -webkit-transform 1500ms;
     transition: transform 1500ms;
@@ -983,6 +983,10 @@ img {
     line-height: 17px;
     margin-bottom: 18px;
   }
+  .slider {
+    border-radius: 20px;
+    overflow: hidden;
+  }
   .slider__item {
     width: 480px;
   }
@@ -1025,7 +1029,7 @@ img {
   }
   .opacity-logo {
     top: 40px;
-    left: 28px;
+    left: 31px;
   }
   .opacity-logo__img {
     width: 141px;
