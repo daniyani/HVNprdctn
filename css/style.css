@@ -459,6 +459,8 @@ img {
 .hero {
   z-index: 100;
   margin-left: 60px;
+  border-radius: 3%;
+  overflow: hidden;
 }
 
 .hero-wrapper {
@@ -468,8 +470,6 @@ img {
   display: flex;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 3%;
-  overflow: hidden;
 }
 
 .hero__info {
@@ -976,6 +976,7 @@ img {
     line-height: 150%;
   }
   .hero {
+    width: 96%;
     margin: 0 auto;
     margin-top: 34px;
   }
