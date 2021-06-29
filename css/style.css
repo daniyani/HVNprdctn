@@ -556,6 +556,7 @@ img {
   margin-right: 10px;
   outline: none;
   border: none;
+  overflow: hidden;
 }
 
 .slider__item:hover {
@@ -568,6 +569,7 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 .slick-track {
