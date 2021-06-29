@@ -461,11 +461,6 @@ img {
   margin-left: 60px;
 }
 
-.hero-mask {
-  border-radius: 20px 20px 20px 20px;
-  overflow: hidden;
-}
-
 .hero-wrapper {
   min-height: 590px;
   display: -webkit-box;
@@ -473,6 +468,8 @@ img {
   display: flex;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3%;
+  overflow: hidden;
 }
 
 .hero__info {
