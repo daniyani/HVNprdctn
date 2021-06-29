@@ -459,7 +459,7 @@ img {
 .hero {
   z-index: 100;
   margin-left: 60px;
-  border-radius: 3%;
+  border-radius: 1%;
   overflow: hidden;
 }
 
