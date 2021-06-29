@@ -980,8 +980,6 @@ img {
   .hero-wrapper {
     min-height: 0;
     margin-bottom: 30px;
-    border-radius: 20px;
-    overflow: hidden;
   }
   .hero__info {
     padding-top: 10px;
@@ -1007,6 +1005,8 @@ img {
   }
   .slider__item {
     width: 480px;
+    border-radius: 20px;
+    overflow: hidden;
   }
   .slider__img {
     height: auto;
