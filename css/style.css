@@ -981,6 +981,10 @@ img {
   .hero-wrapper {
     min-height: 0;
     margin-bottom: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
   .hero__info {
     padding-top: 10px;
@@ -1004,12 +1008,16 @@ img {
     line-height: 17px;
     margin-bottom: 18px;
   }
+  .slider {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+  }
   .slider__item {
     width: 480px;
   }
   .slider__img {
     height: auto;
-    border-radius: 20px;
   }
   .slider .slick-arrow.slick-prev {
     left: 20px;
