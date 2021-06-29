@@ -459,7 +459,6 @@ img {
 .hero {
   z-index: 100;
   margin-left: 60px;
-  overflow: hidden;
 }
 
 .hero-wrapper {
@@ -569,7 +568,6 @@ img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  overflow: hidden;
 }
 
 .slick-track {
@@ -577,6 +575,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+}
+
+.slick-list {
   overflow: hidden;
 }
 
@@ -1005,11 +1006,10 @@ img {
   }
   .slider__item {
     width: 480px;
-    border-radius: 20px;
-    overflow: hidden;
   }
   .slider__img {
     height: auto;
+    border-radius: 20px;
   }
   .slider .slick-arrow.slick-prev {
     left: 20px;
