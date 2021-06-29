@@ -459,6 +459,7 @@ img {
 .hero {
   z-index: 100;
   margin-left: 60px;
+  overflow: hidden;
 }
 
 .hero-wrapper {
@@ -468,8 +469,7 @@ img {
   display: flex;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  border: 0px solid transparent;
-  border-radius: 1%;
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -577,10 +577,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  overflow: hidden;
-}
-
-.slick-list {
   overflow: hidden;
 }
 
