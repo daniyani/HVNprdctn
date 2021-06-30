@@ -15,8 +15,9 @@
 
 @media (max-width: 992px)
   .header
-    padding-right: 30px
-    padding-left: 30px
+    &--main
+      padding-right: 30px
+      padding-left: 30px
   .footer
     padding-right: 30px
     padding-left: 30px
@@ -70,11 +71,12 @@
     padding-top: 50px
     padding-bottom: 60px
   .header
-    padding-top: 50px
-    padding-bottom: 40px
     background-color: rgba(7, 0, 48, 0.9)
+    &--main
+      padding-top: 50px
+      padding-bottom: 40px
 
-    overflow: hidden
+      overflow: hidden
     &--fixed
       position: fixed
       top: 0
@@ -221,8 +223,9 @@
     padding-top: 30px
     padding-bottom: 40px
   .header
-    padding-top: 40px
-    padding-bottom: 25px
+    &--main
+      padding-top: 40px
+      padding-bottom: 25px
 
   .navbar
     &__link
@@ -234,16 +237,12 @@
       margin-right: 25px
       line-height: 150%
   .hero
-    width: 96%
     margin: 0 auto
     margin-top: 34px
     &-wrapper
       min-height: 0
       margin-bottom: 30px
-      border-top-left-radius: 20px
-      border-top-right-radius: 20px
-      border-bottom-left-radius: 20px
-      border-bottom-right-radius: 20px
+      border-radius: 0
     &__info
       padding-top: 10px
     &__label
@@ -262,16 +261,10 @@
       line-height: 17px
       margin-bottom: 18px
   .slider
-    border-top-left-radius: 20px
-    border-top-right-radius: 20px
-    overflow: hidden
     &__item
       width: 480px
     &__img
       height: auto
-      border-top-left-radius: 20px
-      border-top-right-radius: 20px
-      overflow: hidden
   .slider .slick-arrow.slick-prev
     left: 20px
     width: 10px
