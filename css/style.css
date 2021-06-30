@@ -659,6 +659,251 @@ img {
   padding-bottom: 57px;
 }
 
+.empty-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__text {
+  padding: 30px 32px 37px 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.about__title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.about__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.about__clients {
+  padding: 30px 25px 25px 25px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  margin-right: 30px;
+  max-width: 450px;
+}
+
+.about__talk {
+  padding: 30px 44px 44px 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  min-width: 350px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.about__contacts {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-right: 30px;
+}
+
+.about__empty--fc {
+  min-height: 509px;
+  min-width: 300px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.about__empty--sc {
+  height: 100%;
+  min-width: 300px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  margin-right: 30px;
+  border-radius: 20px;
+}
+
+.about__empty--tc {
+  min-height: 289px;
+  min-width: 300px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.about__empty--lc {
+  height: 100%;
+  min-width: 300px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  border-radius: 20px;
+}
+
+.about-info__title {
+  margin-bottom: 24px;
+}
+
+.clients__pic {
+  text-align: center;
+}
+
+.clients__title {
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.talk__title {
+  margin-bottom: 24px;
+}
+
+.talk__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.talk__input {
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.talk__comment {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  resize: none;
+  padding-top: 13px;
+  padding-left: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  min-height: 90px;
+  margin-bottom: 24px;
+}
+
+.talk__label {
+  margin-bottom: 7px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.talk__button {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  color: #000;
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__link {
+  margin-right: 12px;
+}
+
+.contacts__title {
+  margin-bottom: 24px;
+}
+
+.contacts__info {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.contacts__connect {
+  text-decoration: none;
+}
+
 @media (max-width: 1200px) {
   .slider__item {
     width: 833px;
