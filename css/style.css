@@ -1033,9 +1033,13 @@ img {
   .hero {
     margin-top: 34px;
   }
+  .hero-wrapper {
+    border-radius: 0;
+  }
   .hero__link {
     color: #000;
     background: #fff;
+    border-radius: 0;
   }
   .slider__item {
     width: 785px;
@@ -1234,7 +1238,6 @@ img {
   .hero-wrapper {
     min-height: 0;
     margin-bottom: 30px;
-    border-radius: 0;
   }
   .hero__info {
     padding-top: 10px;
