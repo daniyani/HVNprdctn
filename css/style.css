@@ -659,66 +659,11 @@ img {
   padding-bottom: 57px;
 }
 
-.about {
-  position: relative;
-}
-
 .about-connect {
   margin-right: 30px;
 }
 
-.about-fade__empty {
-  position: absolute;
-  z-index: 2;
-}
-
-.about-fade__empty--first {
-  width: 494px;
-  height: 509px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
-  border-radius: 20px;
-  margin-bottom: 30px;
-  top: 0;
-  left: 0;
-}
-
-.about-fade__empty--second {
-  width: 494px;
-  height: 212px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
-  border-radius: 20px;
-  bottom: 0;
-  left: 0;
-}
-
-.about-fade__empty--third {
-  width: 494px;
-  height: 289px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  border-radius: 20px;
-  margin-bottom: 30px;
-  top: 0;
-  right: 0;
-}
-
-.about-fade__empty--fourth {
-  width: 494px;
-  height: 432px;
-  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  border-radius: 20px;
-  bottom: 0;
-  right: 0;
-}
-
-.about-fade--left {
+.about-connect--left {
   margin-right: 30px;
 }
 
@@ -729,6 +674,7 @@ img {
   display: flex;
   margin: 0 auto;
   z-index: 99;
+  position: relative;
 }
 
 .about-title {
@@ -751,6 +697,19 @@ img {
   border-radius: 20px;
 }
 
+.about-text::before {
+  content: "";
+  width: 494px;
+  height: 509px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  top: 0;
+  right: 944px;
+  position: absolute;
+}
+
 .about-text__subtitle {
   margin: 0;
   font-style: normal;
@@ -768,6 +727,19 @@ img {
   border-radius: 20px;
 }
 
+.about-clients::before {
+  content: "";
+  width: 494px;
+  height: 212px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  top: 539px;
+  right: 944px;
+  position: absolute;
+}
+
 .about-clients__clients {
   width: 461px;
 }
@@ -778,6 +750,21 @@ img {
   padding: 30px 44px 44px 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+}
+
+.about-talk::before {
+  content: "";
+  width: 494px;
+  height: 289px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  top: 0;
+  left: 944px;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .about-talk__form {
@@ -867,6 +854,21 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about-contacts::before {
+  content: "";
+  width: 494px;
+  height: 432px;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  top: 319px;
+  left: 944px;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .about-contacts__social {
