@@ -273,13 +273,26 @@
     &-text
       margin-bottom: 20px
       max-height: 100%
+
     &-clients
 
     &-talk
       margin-bottom: 20px
+      &__input
+        width: 100%
+        font-size: 16px
+      &__comment
+        width: 100%
+        font-size: 16px
+      &__button
+        width: 100%
+        font-size: 16px
     &-contacts
       padding-right: 30px
       padding-left: 30px
+      &__info
+        font-size: 16px
+        line-height: 150%
 
 @media (max-width: 576px)
   .container
@@ -310,6 +323,11 @@
       padding: 20px 34px 34px 34px
 
     &-contacts
+@media (max-width: 343px)
+  &-contacts
+    &__info
+      font-size: 10px
+      line-height: 150%
 
 @media (max-width: 320px)
   .container

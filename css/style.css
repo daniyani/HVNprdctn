@@ -840,7 +840,7 @@ img {
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.4);
@@ -1271,9 +1271,25 @@ img {
   .about-talk {
     margin-bottom: 20px;
   }
+  .about-talk__input {
+    width: 100%;
+    font-size: 16px;
+  }
+  .about-talk__comment {
+    width: 100%;
+    font-size: 16px;
+  }
+  .about-talk__button {
+    width: 100%;
+    font-size: 16px;
+  }
   .about-contacts {
     padding-right: 30px;
     padding-left: 30px;
+  }
+  .about-contacts__info {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 
@@ -1312,6 +1328,13 @@ img {
   }
   .about-talk {
     padding: 20px 34px 34px 34px;
+  }
+}
+
+@media (max-width: 343px) {
+  -contacts__info {
+    font-size: 10px;
+    line-height: 150%;
   }
 }
 
