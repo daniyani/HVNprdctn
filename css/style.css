@@ -514,7 +514,7 @@ img {
   font-size: 14px;
   line-height: 150%;
   max-width: 240px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .hero__date {
@@ -524,8 +524,7 @@ img {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 48px;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
 }
 
 .hero__link {
@@ -1179,6 +1178,10 @@ img {
   .hero-wrapper {
     min-height: 550px;
   }
+  .hero__link {
+    color: #000;
+    background: #fff;
+  }
 }
 
 @media (max-width: 1025px) {
@@ -1210,8 +1213,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-radius: 0;
   }
-  .hero-wrapper:last-child {
+  .hero__link {
+    border-radius: 0;
+  }
+  .hero__link:last-child {
     margin-bottom: 0;
   }
   .hero__info {
