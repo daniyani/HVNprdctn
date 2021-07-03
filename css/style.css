@@ -1331,10 +1331,41 @@ img {
   }
 }
 
-@media (max-width: 343px) {
-  -contacts__info {
+@media (max-width: 382px) {
+  .about-title {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .about-contacts__info {
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 340px) {
+  .about-text__subtitle {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .about-contacts__info {
     font-size: 10px;
     line-height: 150%;
+  }
+  .about-talk {
+    margin-bottom: 20px;
+  }
+  .about-talk__input {
+    width: 100%;
+    font-size: 14px;
+  }
+  .about-talk__comment {
+    width: 100%;
+    font-size: 14px;
+  }
+  .about-talk__button {
+    width: 100%;
+    font-size: 14px;
   }
 }
 
@@ -1359,10 +1390,6 @@ img {
   }
   .about-talk__button {
     width: 100%;
-  }
-  .about-contacts__info {
-    font-size: 10px;
-    line-height: 150%;
   }
 }
 

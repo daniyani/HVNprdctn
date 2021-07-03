@@ -323,11 +323,37 @@
       padding: 20px 34px 34px 34px
 
     &-contacts
-@media (max-width: 343px)
-  &-contacts
-    &__info
-      font-size: 10px
-      line-height: 150%
+@media (max-width: 382px)
+  .about
+    &-title
+      font-size: 28px
+      line-height: 30px
+      margin-bottom: 15px
+    &-contacts
+      &__info
+        font-size: 14px
+        line-height: 150%
+@media (max-width: 340px)
+  .about
+    &-text
+      &__subtitle
+        font-size: 14px
+        line-height: 150%
+    &-contacts
+      &__info
+        font-size: 10px
+        line-height: 150%
+    &-talk
+      margin-bottom: 20px
+      &__input
+        width: 100%
+        font-size: 14px
+      &__comment
+        width: 100%
+        font-size: 14px
+      &__button
+        width: 100%
+        font-size: 14px
 
 @media (max-width: 320px)
   .container
@@ -348,7 +374,3 @@
         width: 100%
       &__button
         width: 100%
-    &-contacts
-      &__info
-        font-size: 10px
-        line-height: 150%
