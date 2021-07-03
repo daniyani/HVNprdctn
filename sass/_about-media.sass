@@ -110,6 +110,20 @@
     &-contacts
       &::before
         max-width: 60px
+@media (max-width: 1090px)
+  .about
+    &-text
+      &::before
+        max-width: 45px
+    &-clients
+      &::before
+        max-width: 45px
+    &-talk
+      &::before
+        max-width: 45px
+    &-contacts
+      &::before
+        max-width: 40px
 @media (max-width: 1075px)
   .about
     &-text
@@ -181,6 +195,10 @@
       &::before
         max-width: 5px
 @media (max-width: 992px)
+  .header
+    &--about
+      padding-right: 30px
+      padding-left: 30px
   .container
     max-width: 700px
   .about
@@ -201,29 +219,134 @@
       align-items: center
     &-info
       margin-bottom: 30px
+      max-width: 100%
+    &-connect
+      width: 100%
     &-text
-
+      max-width: 100%
+      margin: 0
+      margin-bottom: 30px
+      order: -1
     &-clients
-
+      margin: 0
+      max-width: 100%
+      &__clients
+        text-align: center
+        max-width: 100%
+        order: 2
     &-talk
+      margin: 0
+      margin-bottom: 30px
+      max-width: 100%
+      order: 3
+      &-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+      &__button
+        width: 284px
+      &__form
+
+      &__input
+
+      &__label
 
     &-contacts
+      margin: 0
+      max-width: 100%
+      order: 1
 
 @media (max-width: 768px)
+  .header
+    &--about
+      padding-top: 50px
+      padding-bottom: 40px
+      overflow: hidden
   .container
     max-width: 576px
     width: 96%
   .about
     margin-top: 77px
-    &-text
+    &-info
+      margin-bottom: 20px
 
+    &-text
+      margin-bottom: 20px
       max-height: 100%
     &-clients
 
     &-talk
-
+      margin-bottom: 20px
     &-contacts
+      padding-right: 30px
+      padding-left: 30px
 
 @media (max-width: 576px)
   .container
     width: 96%
+    max-width: 440px
+  .about
+    margin-top: 57px
+@media (max-width: 480px)
+  .header
+    &--about
+      padding-top: 40px
+      padding-bottom: 25px
+
+  .container
+    width: 96%
+    max-width: 390px
+  .about
+    margin-top: 30px
+    &-title
+      font-size: 26px
+      line-height: 30px
+      margin-bottom: 18px
+    &-text
+      padding: 20px 22px 27px 22px
+      &__subtitle
+        font-size: 14px
+        line-height: 150%
+    &-clients
+      padding: 20px 15px 15px 15px
+    &-talk
+      padding: 20px 34px 34px 34px
+      &__label
+        font-size: 12px
+        line-height: 150%
+      &__input
+        font-size: 12px
+        line-height: 150%
+      &__comment
+        font-size: 12px
+        line-height: 150%
+      &__button
+        font-size: 16px
+        line-height: 18px
+    &-contacts
+      &__info
+        font-size: 12px
+        line-height: 150%
+@media (max-width: 320px)
+  .container
+    width: 96%
+  .about
+    &-title
+      font-size: 24px
+      line-height: 28px
+      margin-bottom: 15px
+    &-text
+      &__subtitle
+        font-size: 12px
+        line-height: 150%
+    &-talk
+      &__input
+        width: 100%
+      &__comment
+        width: 100%
+      &__button
+        width: 100%
+    &-contacts
+      &__info
+        font-size: 10px
+        line-height: 150%

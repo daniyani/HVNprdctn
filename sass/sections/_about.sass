@@ -7,7 +7,6 @@
 .about
   &--left
     margin-right: 30px
-
   &-wrapper
     display: flex
     position: relative
@@ -105,8 +104,12 @@
       font-weight: 600
       font-size: 14px
       line-height: 150%
-      color: rgba(255, 255, 255, 0.4)
+      color: $primary
       margin-bottom: 12px
+      ::placeholder
+        color: rgba(255, 255, 255, 0.4)
+        opacity: 1
+
     &__comment
       width: 284px
       height: 90px
@@ -158,6 +161,8 @@
       left: 944px
       position: absolute
       transform: rotate(-180deg)
+    &__media-link
+      margin-right: 12px
     &__social
       display: flex
       margin-top: 17px

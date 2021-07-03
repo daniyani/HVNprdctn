@@ -805,8 +805,28 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
   margin-bottom: 12px;
+}
+
+.about-talk__input ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-talk__input :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-talk__input ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-talk__input ::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
 }
 
 .about-talk__comment {
@@ -877,6 +897,10 @@ img {
   position: absolute;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+}
+
+.about-contacts__media-link {
+  margin-right: 12px;
 }
 
 .about-contacts__social {
@@ -1047,6 +1071,21 @@ img {
   }
 }
 
+@media (max-width: 1090px) {
+  .about-text::before {
+    max-width: 45px;
+  }
+  .about-clients::before {
+    max-width: 45px;
+  }
+  .about-talk::before {
+    max-width: 45px;
+  }
+  .about-contacts::before {
+    max-width: 40px;
+  }
+}
+
 @media (max-width: 1075px) {
   .about-text::before {
     max-width: 35px;
@@ -1123,6 +1162,10 @@ img {
 }
 
 @media (max-width: 992px) {
+  .header--about {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
   .container {
     max-width: 700px;
   }
@@ -1149,10 +1192,68 @@ img {
   }
   .about-info {
     margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .about-connect {
+    width: 100%;
+  }
+  .about-text {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .about-clients {
+    margin: 0;
+    max-width: 100%;
+  }
+  .about-clients__clients {
+    text-align: center;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .about-talk {
+    margin: 0;
+    margin-bottom: 30px;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .about-talk-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-talk__button {
+    width: 284px;
+  }
+  .about-contacts {
+    margin: 0;
+    max-width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
 @media (max-width: 768px) {
+  .header--about {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
   .container {
     max-width: 576px;
     width: 96%;
@@ -1160,14 +1261,109 @@ img {
   .about {
     margin-top: 77px;
   }
+  .about-info {
+    margin-bottom: 20px;
+  }
   .about-text {
+    margin-bottom: 20px;
     max-height: 100%;
+  }
+  .about-talk {
+    margin-bottom: 20px;
+  }
+  .about-contacts {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
     width: 96%;
+    max-width: 440px;
+  }
+  .about {
+    margin-top: 57px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header--about {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .container {
+    width: 96%;
+    max-width: 390px;
+  }
+  .about {
+    margin-top: 30px;
+  }
+  .about-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 18px;
+  }
+  .about-text {
+    padding: 20px 22px 27px 22px;
+  }
+  .about-text__subtitle {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .about-clients {
+    padding: 20px 15px 15px 15px;
+  }
+  .about-talk {
+    padding: 20px 34px 34px 34px;
+  }
+  .about-talk__label {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .about-talk__input {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .about-talk__comment {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .about-talk__button {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .about-contacts__info {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 96%;
+  }
+  .about-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+  .about-text__subtitle {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .about-talk__input {
+    width: 100%;
+  }
+  .about-talk__comment {
+    width: 100%;
+  }
+  .about-talk__button {
+    width: 100%;
+  }
+  .about-contacts__info {
+    font-size: 10px;
+    line-height: 150%;
   }
 }
 
@@ -1408,7 +1604,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 50px 30px 20px 30px;
+    padding: 50px 27px 20px 27px;
   }
   .drop-menu__list {
     display: -webkit-box;
