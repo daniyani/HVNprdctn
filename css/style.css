@@ -1307,35 +1307,11 @@ img {
   .about-text {
     padding: 20px 22px 27px 22px;
   }
-  .about-text__subtitle {
-    font-size: 14px;
-    line-height: 150%;
-  }
   .about-clients {
     padding: 20px 15px 15px 15px;
   }
   .about-talk {
     padding: 20px 34px 34px 34px;
-  }
-  .about-talk__label {
-    font-size: 12px;
-    line-height: 150%;
-  }
-  .about-talk__input {
-    font-size: 12px;
-    line-height: 150%;
-  }
-  .about-talk__comment {
-    font-size: 12px;
-    line-height: 150%;
-  }
-  .about-talk__button {
-    font-size: 16px;
-    line-height: 18px;
-  }
-  .about-contacts__info {
-    font-size: 12px;
-    line-height: 150%;
   }
 }
 
