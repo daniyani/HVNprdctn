@@ -350,6 +350,7 @@ template {
 body {
   background: linear-gradient(158.73deg, #021A36 0%, #021A36 0.01%, #24002E 100%);
   font-family: 'Montserrat', sans-serif, 'Helvetica';
+  min-height: 100vh;
 }
 
 img {
@@ -369,6 +370,15 @@ img {
 .drop-menu {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.container {
+  max-width: 914px;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  background: linear-gradient(158.73deg, #021A36 0%, #021A36 0.01%, #24002E 100%);
 }
 
 .header--main {
@@ -468,7 +478,7 @@ img {
   display: flex;
   margin-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   overflow: hidden;
 }
 
@@ -514,6 +524,8 @@ img {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 48px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .hero__link {
@@ -659,21 +671,14 @@ img {
   padding-bottom: 57px;
 }
 
-.about-connect {
-  margin-right: 30px;
-}
-
-.about-connect--left {
+.about--left {
   margin-right: 30px;
 }
 
 .about-wrapper {
-  max-width: 914px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  z-index: 99;
   position: relative;
 }
 
@@ -695,6 +700,7 @@ img {
   padding: 30px 32px 37px 32px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  max-height: 315px;
 }
 
 .about-text::before {
@@ -725,6 +731,7 @@ img {
   padding: 30px 25px 25px 25px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  max-height: 406px;
 }
 
 .about-clients::before {
@@ -741,7 +748,7 @@ img {
 }
 
 .about-clients__clients {
-  width: 461px;
+  max-width: 461px;
 }
 
 .about-talk {
@@ -750,6 +757,7 @@ img {
   padding: 30px 44px 44px 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  max-height: 484px;
 }
 
 .about-talk::before {
@@ -759,7 +767,6 @@ img {
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
   border-radius: 20px;
-  margin-bottom: 30px;
   top: 0;
   left: 944px;
   position: absolute;
@@ -790,12 +797,13 @@ img {
   background-color: transparent;
   outline: none;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   color: rgba(255, 255, 255, 0.4);
@@ -809,6 +817,7 @@ img {
   outline: none;
   padding-left: 15px;
   padding-top: 13px;
+  padding-right: 15px;
   border: 1px solid #FFFFFF;
   border-radius: 10px;
   font-style: normal;
@@ -854,6 +863,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-height: 237px;
 }
 
 .about-contacts::before {
@@ -863,7 +873,6 @@ img {
   background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.06)), color-stop(65.18%, rgba(255, 255, 255, 0)));
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0) 65.18%);
   border-radius: 20px;
-  margin-bottom: 30px;
   top: 319px;
   left: 944px;
   position: absolute;
@@ -892,6 +901,275 @@ img {
 
 .about-contacts__link {
   text-decoration: none;
+  position: relative;
+}
+
+.about-contacts__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 6px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.about-contacts__link:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 1967px) {
+  .about-text::before {
+    max-width: 394px;
+  }
+  .about-clients::before {
+    max-width: 394px;
+  }
+  .about-talk::before {
+    max-width: 394px;
+  }
+  .about-contacts::before {
+    max-width: 394px;
+  }
+}
+
+@media (max-width: 1763px) {
+  .about-text::before {
+    max-width: 294px;
+  }
+  .about-clients::before {
+    max-width: 294px;
+  }
+  .about-talk::before {
+    max-width: 294px;
+  }
+  .about-contacts::before {
+    max-width: 294px;
+  }
+}
+
+@media (max-width: 1563px) {
+  .about-text::before {
+    max-width: 194px;
+  }
+  .about-clients::before {
+    max-width: 194px;
+  }
+  .about-talk::before {
+    max-width: 194px;
+  }
+  .about-contacts::before {
+    max-width: 194px;
+  }
+}
+
+@media (max-width: 1363px) {
+  .about-text::before {
+    max-width: 160px;
+  }
+  .about-clients::before {
+    max-width: 160px;
+  }
+  .about-talk::before {
+    max-width: 160px;
+  }
+  .about-contacts::before {
+    max-width: 160px;
+  }
+}
+
+@media (max-width: 1295px) {
+  .about-text::before {
+    max-width: 120px;
+  }
+  .about-clients::before {
+    max-width: 120px;
+  }
+  .about-talk::before {
+    max-width: 120px;
+  }
+  .about-contacts::before {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .about-text::before {
+    max-width: 100px;
+  }
+  .about-clients::before {
+    max-width: 100px;
+  }
+  .about-talk::before {
+    max-width: 100px;
+  }
+  .about-contacts::before {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 1175px) {
+  .about-text::before {
+    max-width: 80px;
+  }
+  .about-clients::before {
+    max-width: 80px;
+  }
+  .about-talk::before {
+    max-width: 80px;
+  }
+  .about-contacts::before {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 1136px) {
+  .about-text::before {
+    max-width: 60px;
+  }
+  .about-clients::before {
+    max-width: 60px;
+  }
+  .about-talk::before {
+    max-width: 60px;
+  }
+  .about-contacts::before {
+    max-width: 60px;
+  }
+}
+
+@media (max-width: 1075px) {
+  .about-text::before {
+    max-width: 35px;
+  }
+  .about-clients::before {
+    max-width: 35px;
+  }
+  .about-talk::before {
+    max-width: 35px;
+  }
+  .about-contacts::before {
+    max-width: 35px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .about-text::before {
+    max-width: 22px;
+  }
+  .about-clients::before {
+    max-width: 22px;
+  }
+  .about-talk::before {
+    max-width: 22px;
+  }
+  .about-contacts::before {
+    max-width: 22px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .about-text::before {
+    max-width: 15px;
+  }
+  .about-clients::before {
+    max-width: 15px;
+  }
+  .about-talk::before {
+    max-width: 15px;
+  }
+  .about-contacts::before {
+    max-width: 15px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .about-text::before {
+    max-width: 10px;
+  }
+  .about-clients::before {
+    max-width: 10px;
+  }
+  .about-talk::before {
+    max-width: 10px;
+  }
+  .about-contacts::before {
+    max-width: 10px;
+  }
+}
+
+@media (max-width: 994px) {
+  .about-text::before {
+    max-width: 5px;
+  }
+  .about-clients::before {
+    max-width: 5px;
+  }
+  .about-talk::before {
+    max-width: 5px;
+  }
+  .about-contacts::before {
+    max-width: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .about-text::before {
+    display: none;
+  }
+  .about-clients::before {
+    display: none;
+  }
+  .about-talk::before {
+    display: none;
+  }
+  .about-contacts::before {
+    display: none;
+  }
+  .about-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 96%;
+  }
+  .about {
+    margin-top: 77px;
+  }
+  .about-text {
+    max-height: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 96%;
+  }
 }
 
 @media (max-width: 1200px) {
