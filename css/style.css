@@ -988,29 +988,29 @@ img {
 }
 
 .error {
-  border: 1px solid #ab0202;
+  border: 1px solid #f56c62;
 }
 
 #formName-error {
   position: absolute;
-  right: 70px;
-  color: #ab0202;
+  right: 50px;
+  color: #f56c62;
   border: none;
   font-size: 12px;
 }
 
 #formEmail-error {
   position: absolute;
-  right: 70px;
-  color: #ab0202;
+  right: 50px;
+  color: #f56c62;
   border: none;
   font-size: 12px;
 }
 
 #formMessage-error {
   position: absolute;
-  right: 70px;
-  color: #ab0202;
+  right: 50px;
+  color: #f56c62;
   border: none;
   font-size: 12px;
 }
