@@ -62,6 +62,43 @@ $(document).ready(function () {
     function () { $(this).removeClass('hero__link--active') }
   );
 
+$('.about-form').validate({
+   success: function(label) {
+    label.addClass("valid")
+  }
+});
+
+//     $(".form-validate").each(function(){
+//   $(this).validate({
+//     errorClass: "invalid",
+//     messages: {
+//     name: { 
+//      required: "Please enter your name",
+//      minlength: "The name must be at least two letters"
+//     },
+//     email: {
+//       required: "We need your email address to contact you",
+//       email: "Your email address must be in the format of name@domain.com"
+//     },
+//     message: {
+//       required: "This field is required",
+//     },
+//   },
+//   });
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   // let validateForms = function (selector, rules, seccessModal, yaGoal) {
@@ -88,6 +125,7 @@ $(document).ready(function () {
   // }
 
   // validateForms('.about-form', {email:{required: true, email: true}, name: {required: true, minlength: 3}, comment: {required: true}}, )
+
 
 });
 
