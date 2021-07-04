@@ -8,6 +8,15 @@
     background-color: hsla(0, 0%, 100%, 0.1)
     border-radius: 20px 0 0 20px
     overflow: hidden
+  &__list
+    margin-bottom: 30px
+  &__item
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+  &__label
+
   &__info
     padding-top: 30px
     padding-left: 40px
@@ -16,13 +25,14 @@
     padding-bottom: 30px
     display: flex
     flex-direction: column
+    position: relative
   &__title
     margin: 0
     font-style: normal
     font-weight: 600
     font-size: 30px
     line-height: 37px
-    margin-bottom: 6px
+    margin-bottom: 15px
   &__text
     margin: 0
     font-style: normal
@@ -30,7 +40,7 @@
     font-size: 14px
     line-height: 150%
     max-width: 240px
-    margin-bottom: 50px
+    margin-bottom: 20px
   &__date
     display: block
     font-style: normal
@@ -55,6 +65,7 @@
     text-decoration: none
     transition-duration: 0.3s
     transition-timing-function: ease-in-out
+    justify-self: flex-end
     &--active
       color: #000
       background: #fff
@@ -67,7 +78,7 @@
 
   &__item
     width: 955px
-    max-height: 590px
+    min-height: 606px
     margin-right: 10px
     outline: none
     border: none
