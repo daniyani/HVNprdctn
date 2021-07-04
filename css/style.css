@@ -773,7 +773,28 @@ img {
           transform: rotate(-180deg);
 }
 
-.about-talk__form {
+.about-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.about-form__label {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 7px;
+  position: relative;
+}
+
+.about-form__filling {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,15 +804,7 @@ img {
           flex-direction: column;
 }
 
-.about-talk__label {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 150%;
-  margin-bottom: 7px;
-}
-
-.about-talk__input {
+.about-form__input {
   width: 284px;
   background-color: transparent;
   outline: none;
@@ -809,27 +822,27 @@ img {
   margin-bottom: 12px;
 }
 
-.about-talk__input ::-webkit-input-placeholder {
+.about-form__input ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
 
-.about-talk__input :-ms-input-placeholder {
+.about-form__input :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
 
-.about-talk__input ::-ms-input-placeholder {
+.about-form__input ::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
 
-.about-talk__input ::placeholder {
+.about-form__input ::placeholder {
   color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
 
-.about-talk__comment {
+.about-form__comment {
   width: 284px;
   height: 90px;
   background-color: transparent;
@@ -843,12 +856,32 @@ img {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
-  color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
   resize: none;
   margin-bottom: 24px;
 }
 
-.about-talk__button {
+.about-form__comment ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-form__comment :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-form__comment ::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-form__comment ::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.about-form__button {
   display: block;
   text-decoration: none;
   width: 100%;
@@ -862,6 +895,9 @@ img {
   line-height: 21px;
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 .about-contacts {
@@ -949,6 +985,11 @@ img {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.js-validate-error-label {
+  position: absolute;
+  right: 80px;
 }
 
 @media (max-width: 1967px) {
@@ -1268,19 +1309,16 @@ img {
     margin-bottom: 20px;
     max-height: 100%;
   }
-  .about-talk {
+  .about-form {
     margin-bottom: 20px;
   }
-  .about-talk__input {
-    width: 100%;
+  .about-form__input {
     font-size: 16px;
   }
-  .about-talk__comment {
-    width: 100%;
+  .about-form__comment {
     font-size: 16px;
   }
-  .about-talk__button {
-    width: 100%;
+  .about-form__button {
     font-size: 16px;
   }
   .about-contacts {
@@ -1355,15 +1393,15 @@ img {
   .about-talk {
     margin-bottom: 20px;
   }
-  .about-talk__input {
+  .about-form__input {
     width: 100%;
     font-size: 14px;
   }
-  .about-talk__comment {
+  .about-form__comment {
     width: 100%;
     font-size: 14px;
   }
-  .about-talk__button {
+  .about-form__button {
     width: 100%;
     font-size: 14px;
   }
@@ -1381,15 +1419,6 @@ img {
   .about-text__subtitle {
     font-size: 12px;
     line-height: 150%;
-  }
-  .about-talk__input {
-    width: 100%;
-  }
-  .about-talk__comment {
-    width: 100%;
-  }
-  .about-talk__button {
-    width: 100%;
   }
 }
 
