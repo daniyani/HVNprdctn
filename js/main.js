@@ -68,64 +68,6 @@ $('.about-form').validate({
   }
 });
 
-//     $(".form-validate").each(function(){
-//   $(this).validate({
-//     errorClass: "invalid",
-//     messages: {
-//     name: { 
-//      required: "Please enter your name",
-//      minlength: "The name must be at least two letters"
-//     },
-//     email: {
-//       required: "We need your email address to contact you",
-//       email: "Your email address must be in the format of name@domain.com"
-//     },
-//     message: {
-//       required: "This field is required",
-//     },
-//   },
-//   });
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // let validateForms = function (selector, rules, seccessModal, yaGoal) {
-  //   new window.JustValidate(selector, {
-  //     rules: rules,
-  //     submitHandler: function(form){
-  //       let formData = new FormData(form);
-  //       let xhr = new XMLHttpRequest();
-
-  //       xhr.onreadystatechange = function () {
-  //         if (xhr.readyState === 4) {
-  //           if (xhr.status === 200) {
-  //             console.log('Отправлено');
-  //           }
-  //         }
-  //       }
-
-  //       xhr.open('POST', 'send.php', true);
-  //       xhr.send(formData);
-
-  //       form.reset();
-  //     }
-  //   });
-  // }
-
-  // validateForms('.about-form', {email:{required: true, email: true}, name: {required: true, minlength: 3}, comment: {required: true}}, )
-
 
 });
 
