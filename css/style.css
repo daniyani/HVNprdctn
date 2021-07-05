@@ -482,7 +482,7 @@ ul {
 }
 
 .hero-wrapper {
-  min-height: 590px;
+  min-height: 606px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,6 +596,13 @@ ul {
   outline: none;
   border: none;
   overflow: hidden;
+  position: relative;
+}
+
+.slider__item::after {
+  display: block;
+  content: '';
+  padding-bottom: 56.25%;
 }
 
 .slider__item:hover {
@@ -604,6 +611,9 @@ ul {
 }
 
 .slider__img {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
