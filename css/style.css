@@ -1340,6 +1340,18 @@ ul {
         -ms-flex-order: 1;
             order: 1;
   }
+  #formName-error {
+    right: 210px;
+    font-size: 12px;
+  }
+  #formEmail-error {
+    right: 210px;
+    font-size: 12px;
+  }
+  #formMessage-error {
+    right: 210px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1382,6 +1394,18 @@ ul {
     font-size: 16px;
     line-height: 150%;
   }
+  #formName-error {
+    right: 150px;
+    font-size: 12px;
+  }
+  #formEmail-error {
+    right: 150px;
+    font-size: 12px;
+  }
+  #formMessage-error {
+    right: 150px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1391,6 +1415,18 @@ ul {
   }
   .about {
     margin-top: 57px;
+  }
+  #formName-error {
+    right: 83px;
+    font-size: 12px;
+  }
+  #formEmail-error {
+    right: 83px;
+    font-size: 12px;
+  }
+  #formMessage-error {
+    right: 83px;
+    font-size: 12px;
   }
 }
 
@@ -1419,6 +1455,18 @@ ul {
   }
   .about-talk {
     padding: 20px 34px 34px 34px;
+  }
+  #formName-error {
+    right: 58px;
+    font-size: 10px;
+  }
+  #formEmail-error {
+    right: 58px;
+    font-size: 10px;
+  }
+  #formMessage-error {
+    right: 58px;
+    font-size: 10px;
   }
 }
 
@@ -1458,6 +1506,18 @@ ul {
     width: 100%;
     font-size: 14px;
   }
+  #formName-error {
+    right: 10px;
+    font-size: 10px;
+  }
+  #formEmail-error {
+    right: 10px;
+    font-size: 10px;
+  }
+  #formMessage-error {
+    right: 10px;
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1472,6 +1532,21 @@ ul {
   .about-text__subtitle {
     font-size: 12px;
     line-height: 150%;
+  }
+}
+
+@media (max-width: 280px) {
+  #formName-error {
+    right: 10px;
+    font-size: 8px;
+  }
+  #formEmail-error {
+    right: 10px;
+    font-size: 8px;
+  }
+  #formMessage-error {
+    right: 10px;
+    font-size: 8px;
   }
 }
 
