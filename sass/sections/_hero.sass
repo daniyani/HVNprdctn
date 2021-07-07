@@ -2,7 +2,6 @@
   z-index: 100
   margin-left: 60px
   &-wrapper
-    min-height: 606px
     display: flex
     margin-bottom: 50px
     background-color: hsla(0, 0%, 100%, 0.1)
@@ -92,6 +91,7 @@
       cursor: grab
 
   &__img
+    display: block
     width: 100%
     height: 100%
     object-fit: cover
@@ -99,8 +99,14 @@
 .slick-track
   display: flex
   position: relative
+  opacity: 1
+  width: 19708px
 .slick-list
   overflow: hidden
+  position: relative
+  display: block
+  margin: 0
+  padding: 0
 
 .slider .slick-arrow
   position: absolute
