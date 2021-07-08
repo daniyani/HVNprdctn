@@ -479,6 +479,7 @@ ul {
 .hero {
   z-index: 100;
   margin-left: 60px;
+  margin-bottom: 60px;
 }
 
 .hero-wrapper {
@@ -489,6 +490,10 @@ ul {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px 0 0 20px;
   overflow: hidden;
+}
+
+.hero-wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .hero__list {
@@ -660,6 +665,10 @@ ul {
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 57px;
+}
+
+.about {
+  margin-bottom: 60px;
 }
 
 .about--left {
@@ -1402,6 +1411,7 @@ ul {
     max-width: 390px;
   }
   .about {
+    margin-bottom: 100px;
     margin-top: 30px;
   }
   .about-title {
@@ -1537,7 +1547,7 @@ ul {
 @media (max-width: 1440px) {
   .hero {
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 60px;
   }
   .hero-wrapper {
     min-height: 711px;
@@ -1851,6 +1861,7 @@ ul {
   .hero {
     margin: 0 auto;
     margin-top: 34px;
+    margin-bottom: 100px;
   }
   .hero-wrapper {
     min-height: 0;
