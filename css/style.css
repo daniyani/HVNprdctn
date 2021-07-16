@@ -512,7 +512,7 @@ ul {
   margin-bottom: 0;
 }
 
-.hero__item--semibold {
+.hero__name {
   font-weight: 600;
 }
 
@@ -903,7 +903,7 @@ ul {
 
 .about-contacts {
   max-width: 372px;
-  padding: 30px 49px 30px 49px;
+  padding: 30px 45px 30px 45px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   display: -webkit-box;
@@ -955,7 +955,7 @@ ul {
   margin-bottom: 5px;
 }
 
-.about-contacts__info--normal {
+.about-contacts__normal {
   font-weight: 300;
 }
 
@@ -1008,7 +1008,7 @@ ul {
   font-size: 12px;
 }
 
-#formMessage-error {
+#formComment-error {
   position: absolute;
   right: 50px;
   color: #f56c62;
@@ -1319,7 +1319,7 @@ ul {
     right: 210px;
     font-size: 12px;
   }
-  #formMessage-error {
+  #formComment-error {
     right: 210px;
     font-size: 12px;
   }
@@ -1358,8 +1358,8 @@ ul {
     font-size: 16px;
   }
   .about-contacts {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
   }
   .about-contacts__info {
     font-size: 16px;
@@ -1373,7 +1373,7 @@ ul {
     right: 150px;
     font-size: 12px;
   }
-  #formMessage-error {
+  #formComment-error {
     right: 150px;
     font-size: 12px;
   }
@@ -1395,7 +1395,7 @@ ul {
     right: 83px;
     font-size: 12px;
   }
-  #formMessage-error {
+  #formComment-error {
     right: 83px;
     font-size: 12px;
   }
@@ -1436,7 +1436,7 @@ ul {
     right: 58px;
     font-size: 10px;
   }
-  #formMessage-error {
+  #formComment-error {
     right: 58px;
     font-size: 10px;
   }
@@ -1486,7 +1486,7 @@ ul {
     right: 10px;
     font-size: 10px;
   }
-  #formMessage-error {
+  #formComment-error {
     right: 10px;
     font-size: 10px;
   }
@@ -1516,7 +1516,7 @@ ul {
     right: 10px;
     font-size: 8px;
   }
-  #formMessage-error {
+  #formComment-error {
     right: 10px;
     font-size: 8px;
   }
@@ -1793,11 +1793,6 @@ ul {
     margin-top: 20px;
   }
   .drop-menu__link {
-    position: relative;
-    width: 100%;
-    text-decoration: none;
-  }
-  .drop-menu__item {
     color: #000;
     padding-top: 17px;
     padding-bottom: 17px;
@@ -1805,6 +1800,13 @@ ul {
     font-weight: normal;
     font-size: 18px;
     line-height: 150%;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .drop-menu__item {
+    position: relative;
+    width: 100%;
+    text-decoration: none;
   }
   .drop-menu__line {
     display: block;

@@ -96,7 +96,7 @@
                 <!--  Textarea -->
                 <div class="about-form__filling">
                   <label for="formComment" class="about-form__label">The thing</label>
-                  <textarea name="message" id="formMessage" class="about-form__comment about-form__input_comment"
+                  <textarea name="message" id="formComment" class="about-form__comment about-form__comment_message"
                     placeholder="Tell us what you wanna to discuss" data-validate-field="comment" required></textarea>
                 </div>
                 <!--  Textarea -->
@@ -112,12 +112,12 @@
           </div>
           <div class="about-contacts">
             <h2 class="about-title">Contacts</h2>
-            <span class="about-contacts__info"><span class="about-contacts__info--normal">Mail:</span> <a
+            <span class="about-contacts__info"><span class="about-contacts__normal">Mail:</span> <a
                 class="about-contacts__link" href="mailto:hi@heaventv.ru">hi@heaventv.ru</a></span>
-            <span class="about-contacts__info"> <span class="about-contacts__info--normal">Phone:</span> <a
+            <span class="about-contacts__info"> <span class="about-contacts__normal">Phone:</span> <a
                 class="about-contacts__link" href="tel:+79851232312">: +7 (985)
                 123-23-12</a> </span>
-            <span class="about-contacts__info"> <span class="about-contacts__info--normal">Adress:</span> Moscow,
+            <span class="about-contacts__info"> <span class="about-contacts__normal">Adress:</span> Moscow,
               Tokmakov
               Pereulok 23</span>
             <div class="about-contacts__social">
@@ -144,7 +144,7 @@
   </div>
 
   <div class="overlay" data-modal-overlay="my_modal">
-    <a href="#" class="opacity-logo">
+    <a href="index.html" class="opacity-logo">
       <img src="img/drop-menu-logo.svg" alt="" class="opacity-logo__img">
     </a>
     <div class="drop-menu" data-modal-menu="my_modal">
@@ -154,15 +154,18 @@
         </a>
       </div>
       <ul class="drop-menu__list">
-
-        <a href="index.html" class="drop-menu__link">
+        <li class="drop-menu__item">
           <span class="drop-menu__line"></span>
-          <li class="drop-menu__item">Home</li>
-        </a>
-        <a href="#" class="drop-menu__link">
+          <a href="index.html" class="drop-menu__link">
+            Home
+          </a>
+        </li>
+        <li class="drop-menu__item">
           <span class="drop-menu__line"></span>
-          <li class="drop-menu__item">About</li>
-        </a>
+          <a href="about.html" class="drop-menu__link">
+            About
+          </a>
+        </li>
       </ul>
     </div>
   </div>
