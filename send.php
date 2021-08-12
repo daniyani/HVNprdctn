@@ -37,7 +37,7 @@ try {
     $mail->setFrom('abouthvnprdctn@gmail.com', 'Heaven Production'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('daniyanii@yandex.ru');
+    $mail->addAddress('hi@heaventv.ru');
 
 // Отправка сообщения
 $mail->isHTML(true);
